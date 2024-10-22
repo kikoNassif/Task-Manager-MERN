@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 interface MainLayoutProps {
@@ -5,8 +6,11 @@ interface MainLayoutProps {
 }
 
 function MainLayout({ children }: MainLayoutProps) {
-  return(
-    <div>MainLayout</div>
+  // const { isEditing, profileModal } = useTasks();
+  return (
+    <div className="main-layout flex-1 bg-[#EDEDED] border-2 border-white rounded-[1.5rem] overflow-auto">
+      {children}
+    </div>
   );
 }
 

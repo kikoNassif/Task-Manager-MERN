@@ -21,7 +21,7 @@ function MiniSideBar() {
 
   const navItems = [
     {
-      icon: <IconGrid />,
+      icon: <IconGrid strokeColor={getStrokeColor('/')}/>,
       title: "All",
       link: "/",
     },

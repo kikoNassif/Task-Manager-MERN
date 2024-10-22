@@ -10,7 +10,9 @@ interface MainContentLayout {
 function MainContentLayout({ children }: MainContentLayout) {
   const userId = useUserContext().user._id;
   return (
-    <main className={`${ userId ? `pr-[20rem]` : `` } pb-[1.5rem] flex h-full`}>MainContentLayout</main>
+    <main className={`${ userId ? `pr-[20rem]` : `` } pb-[1.5rem] flex h-full`}>
+      {children}
+      </main>
   )
 }
 
